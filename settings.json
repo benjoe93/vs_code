@@ -1,14 +1,15 @@
 {
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "prettier.printWidth": 120
   },
+
   "[python]": {
     "editor.rulers": [120]
   },
 
-  "black-formatter.args": ["--line-length", "120"],
   "autoDocstring.docstringFormat": "google",
+  "black-formatter.args": ["--line-length", "120"],
+  "breadcrumbs.enabled": false,
   "editor.codeActionsOnSave": {
     "source.organizeImports": "always"
   },
@@ -17,16 +18,22 @@
   "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
   
+  "isort.args": ["--profile=black"],
+
+  "python.analysis.autoFormatStrings": true,
   "python.analysis.extraPaths": [
     "C:\\Users\\benbl\\Documents\\UnrealPythonStub"
   ],
   "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.inlayHints.variableTypes": true,
-  "python.analysis.typeCheckingMode": "off",
+  "python.analysis.typeCheckingMode": "basic",
   "python.autoComplete.extraPaths": [
     "C:\\Users\\benbl\\Documents\\UnrealPythonStub"
   ],
   "python.languageServer": "Pylance",
+  
+  "prettier.bracketSameLine": true,
+  "prettier.printWidth": 120,
   
   "scm.showIncomingChanges": "always",
   "scm.showOutgoingChanges": "always",
